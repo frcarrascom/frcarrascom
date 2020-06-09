@@ -220,7 +220,7 @@ li{
 .portfolio h2, h6{
     background: linear-gradient(to top, #F727B2, #3883ff);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparens;
+    -webkit-text-fill-color: transparent;
 }
 
 .portfolio-description{
