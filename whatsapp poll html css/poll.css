@@ -1,0 +1,248 @@
+/*Start global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html{
+    font-size: 10px;
+    font-family: 'Segoe UI', 'Open Sans', 'sans-serif', 'Roboto';
+
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: url(/images/background4.jpg) repeat center fixed;
+    background-size: cover;
+}
+
+section{
+    padding: 5rem;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+img{
+    width: 100%;
+}
+
+
+/*End global*/
+
+/* Starts images layout */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* END IMAGE LAYOUT */
+
+/*Start reusable*/
+
+.container{
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-heading{
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+h1{
+    font-size: 5rem;
+    background: -webkit-linear-gradient(#F727B2, #3883ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-heading h2{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 1rem;
+    background: -webkit-linear-gradient(#F727B2, #3883ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-heading h6{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/*End reusable*/
+
+/*Start header*/
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+.top-nav{
+    width: 100%;
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: blueviolet    ;
+    opacity: 60%;
+    transition: top 0.3s;
+}
+
+.top-nav p{
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 55px;
+    float: left;
+    padding: 0px  20px;
+}
+
+.top-nav ul{
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+.top-nav ul li {
+    float: right;
+    list-style: none;
+    width: 80px;
+    height: 50px;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+.top-nav ul li a{
+    color: #A4DCE9;
+}
+
+.top-nav ul li ul{
+    display: none;
+    position: absolute;
+    opacity: 80%;
+    background-color:blueviolet;
+    padding: 8px 0 0 0;
+    border-radius: 0px 0px 4px 4px  ;
+}
+
+.top-nav ul li:hover ul{
+    display: block;
+} 
+
+.top-nav ul li ul li{
+    width: 18rem;
+    border-radius: 4px;
+   }
+
+
+.top-nav ul li ul li a{
+    padding: 10px 20px;
+   }
+
+.top-nav ul li ul li a:hover{
+    background-color: white;
+}
+.nav-link{
+    font-family: 'Segoe UI', 'the historia demo', sans-serif;
+}
+
+.landing-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.landing-text h2{
+    font-size: 8rem;
+    font-family: 'Open-Sans', sans-serif;
+    background: linear-gradient(to top, #F727B2, #3883ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+}
+
+.landing-text h6{
+    font-size: 4rem;
+    font-weight: 400;
+    border: none;
+}
+/*End header*/
+
+/*Start footer*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.up{
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    background-color: lightgray;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+}
+
+.up i{
+    color: #16162d;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.copyright p{
+    font-size: 1.3rem;
+    color: white;
+}
+/*End footer*/
+
+/*Start animations*/
+@-webkit-keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+}
+/*End animations*/
+
+/*Start media queries*/
+/*End media queries*/
