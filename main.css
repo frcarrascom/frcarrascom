@@ -108,26 +108,21 @@ header{
     font-family: 'Segoe UI', sans-serif;
     color: white;
     font-size: 2rem;
+    font-weight: 400;
     line-height: 55px;
     float: left;
     padding: 0px  20px;
 }
 
-.top-nav a{
-    text-decoration: none;
-    color: #A4DCE9;
-    display: block;
-}
-
 .top-nav ul{
     margin: 0px;
     padding: 0px;
-    list-style: none;
     float: right;
 }
 
 .top-nav ul li {
     float: right;
+    list-style: none;
     width: 80px;
     height: 50px;
     line-height: 5rem;
@@ -137,33 +132,47 @@ header{
     position: relative;
 }
 
-.top-nav ul li ul{
-    display: block;
-    position: absolute;
+.top-nav ul li a{
+    color: #A4DCE9;
 }
 
-.top-nav ul li ul li{
+.top-nav ul li ul{
     display: none;
-   }
-
-.top-nav ul li:hover ul li {
-    display: block;
-    background-color: blueviolet;
+    position: absolute;
     opacity: 80%;
-    padding-top: 8rem;
+    background-color:blueviolet;
+    padding: 8px 0 0 0;
+    border-radius: 0px 0px 4px 4px  ;
+}
+
+.top-nav ul li:hover ul{
+    display: block;
+} 
+
+.top-nav ul li ul li{
+    width: 18rem;
+    border-radius: 4px;
    }
 
+
+.top-nav ul li ul li a{
+    padding: 10px 20px;
+   }
+
+.top-nav ul li ul li a:hover{
+    background-color: white;
+}
 .nav-link{
     font-family: 'Segoe UI', 'the historia demo', sans-serif;
 }
 
-.top-nav ul li:hover,
+/*.top-nav ul li:hover,
 .top-nav ul li:focus{
     background: linear-gradient(to top, #F727B2, #3883ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+*/
 .landing-text{
     position: absolute;
     top: 50%;
