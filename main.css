@@ -23,7 +23,8 @@ body{
 }
 
 section{
-    padding: 5rem;
+    padding: 5rem 0;
+
 }
 
 p{
@@ -98,11 +99,6 @@ header{
     opacity: 60%;
     transition: top 0.3s;
 }
-
-/*.top-nav a{
-    font-size: 2rem;
-    padding: 0 3rem 0 0 ;
-}*/
 
 .top-nav p{
     font-family: 'Segoe UI', sans-serif;
@@ -314,27 +310,28 @@ header{
 /*End services*/
 
 /*Start timeline cv*/
-.timeline .resume, .studies{
 
+.timeline ul{
+    border-left: 4px solid #ECCBE6;
+    border-radius: 0.8rem;
     background-color: whitesmoke;
     margin: 0 auto;
     position: relative;
+    padding: 5rem;
     list-style: none;
     text-align: left;
-    width: 100%;
-    padding-left: 20rem;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+    width: 70%;
 }
 
-
+.timeline ol{
+    list-style: none;
+}
 
 .timeline h2{
     font-size: 2.5rem;
     text-transform: uppercase;
-    font-weight: 300;
-    margin-bottom: 1.5rem;
-    font-weight: bold;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 .timeline h3{
@@ -350,37 +347,39 @@ header{
 }
 
 .timeline .date{
-    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
     position: relative;
 }
 
 .timeline .date:last-of-type{
     padding-bottom: 0;
     margin-bottom: 0;
-     border: none;
+    border: none;
 }
 
 .timeline .date::before,
 .timeline .date::after{
     position: absolute;
     display: block;
-    top: 25%;
-    transform: translateY(-80%);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .timeline .date::before{
     content: attr(data-date);
-    left: -19rem;
+    left: -21rem;
     text-align: right;
-    min-width: 12rem;
+    min-width: 14rem;
     font-size: 1.5rem;
+    font-weight: 800;
 }
 
 .timeline .date::after{
     content: '';
     box-shadow: 0 0 0 4px #ECCBE6;
     border-radius: 100%;
-    left: -2.7rem;
+    left: -5.9rem;
     height: 1.5rem;
     width: 1.5rem;
     background-color: whitesmoke;
@@ -448,6 +447,7 @@ header{
     border-radius: 100%;
     display: flex;
     animation: pulse 2s infinite;
+    cursor: pointer;
 }
 
 .up i{
@@ -477,4 +477,100 @@ header{
 /*End animations*/
 
 /*Start media queries*/
+
+@media screen and (max-width: 768px) {
+    body{
+        background: url(/images/background4.jpg) repeat center fixed;
+        background-size: cover;
+    }
+    
+    li{
+        margin: 1rem 0;
+    }
+
+    .nav-link{
+        font-size: 2rem;
+    }
+
+    .about-heading h2{
+        font-size: 4rem;
+    }
+
+    .section-heading h2{
+        font-size: 3rem;
+    }
+
+    .about-details li{
+        margin: 0 2rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.5rem;
+    }
+
+    .landing-text h1{
+        font-size: 8rem;
+    }
+
+    .landing-text h6{
+        font-size: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .landing-text h1{
+        font-size: 4rem;
+    }
+
+    .landing-text h6{
+        font-size: 2rem;
+    }
+
+    .profile-img{
+        width: 25rem;
+    }
+
+    .nav-link{
+        font-size: 2.5rem;
+    }
+
+    .about .container{
+        flex-direction: column;
+    }
+
+    .profile-img{
+        margin: 0 0 7rem 0;
+    }
+
+    .portfolio-item{
+        flex-direction: column;
+    }
+
+    .portfolio-img{
+        margin: 0 0 2rem 0;
+    }
+
+    .portfolio-description{
+        margin: 0;
+    }
+
+    .timeline p{
+        font-size: 1.6rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.4rem;
+        padding-left: 70px;
+        z-index: 50;
+    }
+
+    .up{
+        right: 2rem;
+    }
+
+    .cta{
+        padding-bottom: 1.5rem;
+    }
+}
 /*End media queries*/
