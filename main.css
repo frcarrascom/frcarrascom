@@ -93,7 +93,6 @@ header{
     width: 100%;
     height: 6rem;
     position: fixed;
-    top: 0;
     z-index: 5;
     background-color: blueviolet    ;
     opacity: 60%;
@@ -135,9 +134,7 @@ header{
 .top-nav ul li ul{
     display: none;
     position: absolute;
-    opacity: 80%;
     background-color:blueviolet;
-    padding: 8px 0 0 0;
     border-radius: 0px 0px 4px 4px  ;
 }
 
@@ -155,20 +152,15 @@ header{
     padding: 10px 20px;
    }
 
-.top-nav ul li ul li a:hover{
-    background-color: white;
-}
 .nav-link{
     font-family: 'Segoe UI', 'the historia demo', sans-serif;
 }
 
-/*.top-nav ul li:hover,
+.top-nav ul li:hover,
 .top-nav ul li:focus{
-    background: linear-gradient(to top, #F727B2, #3883ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: whitesmoke
 }
-*/
+
 .landing-text{
     position: absolute;
     top: 50%;
@@ -483,11 +475,12 @@ header{
         background: url(/images/background4.jpg) repeat center fixed;
         background-size: cover;
     }
+
     
     li{
         margin: 1rem 0;
     }
-
+    
     .nav-link{
         font-size: 2rem;
     }
@@ -509,7 +502,7 @@ header{
     }
 
     .landing-text h1{
-        font-size: 8rem;
+        font-size: 6rem;
     }
 
     .landing-text h6{
@@ -519,6 +512,12 @@ header{
 }
 
 @media screen and (max-width: 600px){
+
+    body{
+        background: url(/images/background4.jpg) repeat center fixed;
+        background-size: cover;
+    }
+
     .landing-text h1{
         font-size: 4rem;
     }
