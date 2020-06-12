@@ -94,8 +94,8 @@ header{
     height: 6rem;
     position: fixed;
     z-index: 5;
-    background-color: blueviolet    ;
-    opacity: 60%;
+    background-color: rgb(191, 107, 233)    ;
+    opacity: 80%;
     transition: top 0.3s;
 }
 
@@ -103,7 +103,7 @@ header{
     font-family: 'Segoe UI', sans-serif;
     color: white;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 55px;
     float: left;
     padding: 0px  20px;
@@ -113,6 +113,7 @@ header{
     margin: 0px;
     padding: 0px;
     float: right;
+    font-weight: 500;
 }
 
 .top-nav ul li {
@@ -134,7 +135,7 @@ header{
 .top-nav ul li ul{
     display: none;
     position: absolute;
-    background-color:blueviolet;
+    background-color:rgb(191, 107, 233);
     border-radius: 0px 0px 4px 4px  ;
 }
 
@@ -213,9 +214,13 @@ header{
 
  .profile-img{
      width: 50rem;
-     
      margin-right: 5rem;
  }
+
+.profile-img img{
+    border-radius: 2%;
+}
+
 
  .social-media{
      margin-top: 5rem;
@@ -527,10 +532,6 @@ header{
         font-size: 2rem;
     }
 
-    .profile-img{
-        width: 25rem;
-    }
-
     .nav-link{
         font-size: 2.5rem;
     }
@@ -540,15 +541,11 @@ header{
     }
 
     .profile-img{
-        margin: 0 0 7rem 0;
+        width: 60%;
     }
 
     .portfolio-item{
         flex-direction: column;
-    }
-
-    .portfolio-img{
-        margin: 0 0 2rem 0;
     }
 
     .portfolio-description{
