@@ -162,18 +162,27 @@ header{
     background: whitesmoke
 }
 
+/* new topnav */
+
+.topnav{
+    float: right;
+}
+
+.landing{
+    display: block; 
+}
+
 .landing-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
+   /* position: absolute;*/
+    margin-top: 10%;
+    width: 100%;
+    height: 40rem;
     text-align: center;
     z-index: 1;
 }
 
-.landing-text h2{
-    font-size: 8rem;
+.landing-text h1{
+    font-size: 9rem !important;
     font-family: 'Open-Sans', sans-serif;
     background: linear-gradient(to top, #F727B2, #3883ff);
     -webkit-background-clip: text;
@@ -182,7 +191,7 @@ header{
 }
 
 .landing-text h6{
-    font-size: 4rem;
+    font-size: 8rem;
     font-weight: 400;
     border: none;
 }
@@ -477,11 +486,13 @@ header{
 /*Start media queries*/
 
 @media screen and (max-width: 768px) and (min-width: 601px) {
+    .navbar-default .navbar-nav .dropdown .drop-button {
+        text-align: left;
+      }
     body{
         background: url(/images/background4.jpg) repeat center fixed;
         background-size: cover;
     }
-
     
     li{
         margin: 1rem 0;
@@ -515,6 +526,7 @@ header{
         font-size: 4rem;
     }
 
+
 }
 
 @media screen and (max-width: 600px){
@@ -524,24 +536,29 @@ header{
         background-size: cover;
     }
 
+    .navbar-default{
+        background-color: rgba(0, 0, 0, 0) !important;
+        border: none !important;
+    }
+
+    .about .container{
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
     .landing-text h1{
-        font-size: 4rem;
+        font-size: 25px !important;
     }
 
     .landing-text h6{
         font-size: 2rem;
     }
 
-    .nav-link{
-        font-size: 2.5rem;
-    }
-
-    .about .container{
-        flex-direction: column;
-    }
-
     .profile-img{
-        width: 60%;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
     }
 
     .portfolio-item{
@@ -573,5 +590,100 @@ header{
     .cta{
         padding-bottom: 1.5rem;
     }
+
+    button{
+        background-color: rgb(191, 107, 233) !important;
+    }
+
+    .barra{
+        background-color: white !important;
+    }
+
+    .navbar-nav a{
+        background-color: rgb(191, 107, 233) !important;
+        color: white !important;
+    }
+
+    .navbar-brand{
+        color: rgb(191, 107, 233) !important;
+        font-weight: 600;
+    }
+
+    .dropdown-menu{
+        padding: 0 !important;
+    }
+    
+    .dropdown-menu a{
+        background-color: rgb(92, 37, 119) !important;
+    }
 }
 /*End media queries*/
+
+/* New Header */
+
+.dropdown-menu > li {
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-color: #ccc;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  }
+  .right-caret:after,
+  .left-caret:after {
+    content: "";
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+    width: 0;
+    margin-left: 5px;
+  }
+  .right-caret:after {
+    border-left: 5px solid #444;
+  }
+  .left-caret:after {
+    border-right: 5px solid #444;
+  }
+  .navbar-default .navbar-nav .dropdown .drop-button {
+    border: none;
+    padding:0px;
+    outline: none;
+    border-radius: 0;
+    
+  }
+  .navbar-nav li a{
+    background-color: rgb(191, 107, 233) !important;
+    color: white !important;
+  }
+  .navbar-default .navbar-nav .dropdown .drop-button:focus,
+  .navbar-default .navbar-nav .dropdown .drop-button:hover {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .container-fluid{
+      background-color: rgb(191, 107, 233);
+  }
+
+  .navbar-brand{
+      color: white !important;
+  }
+
+
+/* End new header */
