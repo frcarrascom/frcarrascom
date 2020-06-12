@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 
 /*    Nav scroll down    */
-
+/*
 var mywindow = $(window);
 var mypos = mywindow.scrollTop();
 var up = false;
@@ -21,7 +21,7 @@ mywindow.scroll(function () {
     }
     mypos = newscroll;
 });
-
+*/
 /*    Nav scroll down end   */
 
 

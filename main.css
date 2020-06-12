@@ -394,7 +394,17 @@ header{
     color: white;
 }
 /*End footer*/
+nav{
+    top:0px;
+    position: static;
+}
 
+.landing{
+    position:absolute;
+    left:50%;
+    top:10%;
+    transform: translate(-50%,-10%);
+}
 /*Start animations*/
 @-webkit-keyframes pulse{
     0%{
@@ -410,8 +420,68 @@ header{
 /*End animations*/
 
 /*Start media queries*/
+@media screen and (min-width: 768px) {
+    .container-fluid{
+        background-color: rgb(191, 107, 233);
+    }
+    .navbar-default .navbar-nav .dropdown .drop-button {
+        text-align: left;
+      }
 
-@media screen and (max-width: 768px) and (min-width: 601px) {
+    body{
+        background: url(/images/background4.jpg) repeat center fixed;
+        background-size: cover;
+    }
+
+    .landing{
+        position:absolute;
+        left:50%;
+        top:25%;
+        transform: translate(-50%,-10%);
+    }
+
+    .nav-link{
+        font-size: 2rem;
+    }
+
+    .about-heading h2{
+        font-size: 4rem;
+    }
+
+    .section-heading h2{
+        font-size: 3rem;
+    }
+
+    .about-details li{
+        margin: 0 2rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.5rem;
+    }
+
+    .landing-text h1{
+        font-size: 6rem;
+    }
+
+    .landing-text h6{
+        font-size: 4rem;
+    }
+    .dropdown-menu a{
+        margin:0px;
+        padding: 1rem !important;
+    }
+    .dropdown-menu{
+        padding: 0 !important;
+    }
+
+    .landing-text{
+        margin-top: 40%;
+        margin-bottom: 20%;
+    }
+  
+}
+@media screen and (max-width: 767px) and (min-width: 601px) {
     .navbar-default .navbar-nav .dropdown .drop-button {
         text-align: left;
       }
@@ -451,7 +521,39 @@ header{
     .landing-text h6{
         font-size: 4rem;
     }
+    button{
+        background-color: rgb(191, 107, 233) !important;
+    }
 
+    .barra{
+        background-color: white !important;
+    }
+
+    .navbar-nav a{
+        background-color: rgb(191, 107, 233) !important;
+        color: white !important;
+    }
+
+    a.navbar-brand{
+        color: rgb(191, 107, 233) !important;
+        font-weight: 600;
+    }
+
+    .dropdown-menu{
+        padding: 0 !important;
+    }
+    
+    .dropdown-menu a{
+        background-color: rgb(92, 37, 119) !important;
+    }
+    .topnav{
+        background-color: rgb(191, 107, 233) !important;
+    }
+    .navbar-default{
+        background-color: rgba(0, 0, 0, 0) !important;
+        border: none !important;
+    }
+    
 
 }
 
@@ -471,6 +573,13 @@ header{
         flex-direction: column;
         align-content: center;
         text-align: center;
+    }
+
+    .landing{
+        position:absolute;
+        left:50%;
+        top:25%;
+        transform: translate(-50%,-10%);
     }
 
     .landing-text h1{
@@ -530,7 +639,7 @@ header{
         color: white !important;
     }
 
-    .navbar-brand{
+    a.navbar-brand{
         color: rgb(191, 107, 233) !important;
         font-weight: 600;
     }
@@ -541,6 +650,13 @@ header{
     
     .dropdown-menu a{
         background-color: rgb(92, 37, 119) !important;
+    }
+    .topnav{
+        background-color: rgb(191, 107, 233) !important;
+    }
+
+    .landing-text{
+        margin-top: 50%;
     }
 }
 /*End media queries*/
@@ -603,9 +719,7 @@ header{
     box-shadow: none;
   }
 
-  .container-fluid{
-      background-color: rgb(191, 107, 233);
-  }
+  
 
   .navbar-brand{
       color: white !important;
