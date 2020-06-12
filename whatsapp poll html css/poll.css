@@ -98,91 +98,24 @@ header{
     height: 100vh;
 }
 
-.top-nav{
-    width: 100%;
-    height: 6rem;
-    position: fixed;
-    top: 0;
-    z-index: 5;
-    background-color: blueviolet    ;
-    opacity: 60%;
-    transition: top 0.3s;
-}
-
-.top-nav p{
-    font-family: 'Segoe UI', sans-serif;
-    color: white;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 55px;
-    float: left;
-    padding: 0px  20px;
-}
-
-.top-nav ul{
-    margin: 0px;
-    padding: 0px;
+/* New Header */
+.topnav{
     float: right;
 }
 
-.top-nav ul li {
-    float: right;
-    list-style: none;
-    width: 80px;
-    height: 50px;
-    line-height: 5rem;
-    text-align: center;
-    font-size: 2rem;
-    margin: 0 1.5rem;
-    position: relative;
-}
-
-.top-nav ul li a{
-    color: #A4DCE9;
-}
-
-.top-nav ul li ul{
-    display: none;
-    position: absolute;
-    opacity: 80%;
-    background-color:blueviolet;
-    padding: 8px 0 0 0;
-    border-radius: 0px 0px 4px 4px  ;
-}
-
-.top-nav ul li:hover ul{
-    display: block;
-} 
-
-.top-nav ul li ul li{
-    width: 18rem;
-    border-radius: 4px;
-   }
-
-
-.top-nav ul li ul li a{
-    padding: 10px 20px;
-   }
-
-.top-nav ul li ul li a:hover{
-    background-color: white;
-}
-.nav-link{
-    font-family: 'Segoe UI', 'the historia demo', sans-serif;
-}
 
 .landing-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 10%;
     width: 100%;
+    height: 20rem;
     text-align: center;
     z-index: 1;
 }
 
-.landing-text h2{
-    font-size: 8rem;
+/* new topnav */
+
+.landing-text h1{
+    font-size: 9rem !important;
     font-family: 'Open-Sans', sans-serif;
     background: linear-gradient(to top, #F727B2, #3883ff);
     -webkit-background-clip: text;
@@ -190,11 +123,71 @@ header{
     border: none;
 }
 
-.landing-text h6{
-    font-size: 4rem;
-    font-weight: 400;
+
+.dropdown-menu > li {
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+  .dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-color: #ccc;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  }
+  .right-caret:after,
+  .left-caret:after {
+    content: "";
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+    width: 0;
+    margin-left: 5px;
+  }
+  .right-caret:after {
+    border-left: 5px solid #444;
+  }
+  .left-caret:after {
+    border-right: 5px solid #444;
+  }
+  .navbar-default .navbar-nav .dropdown .drop-button {
     border: none;
-}
+    padding:0px;
+    outline: none;
+    border-radius: 0;
+    
+  }
+  .navbar-nav li a{
+    background-color: rgb(191, 107, 233) !important;
+    color: white !important;
+  }
+  .navbar-default .navbar-nav .dropdown .drop-button:focus,
+  .navbar-default .navbar-nav .dropdown .drop-button:hover {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  
+
+  .navbar-brand{
+      color: white !important;
+  }
+
+
+/* End new header */
 /*End header*/
 
 /*Start footer*/
@@ -245,4 +238,254 @@ header{
 /*End animations*/
 
 /*Start media queries*/
+/*Start media queries*/
+
+@media screen and (min-width: 768px) {
+    .container-fluid{
+        background-color: rgb(191, 107, 233);
+    }
+    .navbar-default .navbar-nav .dropdown .drop-button {
+        text-align: left;
+      }
+
+    body{
+        background: url(/images/background4.jpg) repeat center fixed;
+        background-size: cover;
+    }
+
+    .landing{
+        position:absolute;
+        left:50%;
+        top:15%;
+        transform: translate(-50%, -10%);
+    }
+
+    .nav-link{
+        font-size: 2rem;
+    }
+
+    .about-heading h2{
+        font-size: 4rem;
+    }
+
+    .section-heading h2{
+        font-size: 3rem;
+    }
+
+    .about-details li{
+        margin: 0 2rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.5rem;
+    }
+
+    .landing-text h1{
+        font-size: 6rem;
+    }
+
+    .landing-text h6{
+        font-size: 4rem;
+    }
+    .dropdown-menu a{
+        margin:0px;
+        padding: 1rem !important;
+    }
+    .dropdown-menu{
+        padding: 0 !important;
+    }
+
+    .landing-text{
+        margin-top: 40%;
+        margin-bottom: 20%;
+    }
+  
+}
+@media screen and (max-width: 767px) and (min-width: 601px) {
+    .navbar-default .navbar-nav .dropdown .drop-button {
+        text-align: left;
+      }
+    body{
+        background: url(/images/background4.jpg) repeat center fixed;
+        background-size: cover;
+    }
+    
+    li{
+        margin: 1rem 0;
+    }
+    
+    .nav-link{
+        font-size: 2rem;
+    }
+
+    .about-heading h2{
+        font-size: 4rem;
+    }
+
+    .section-heading h2{
+        font-size: 3rem;
+    }
+
+    .about-details li{
+        margin: 0 2rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.5rem;
+    }
+
+    .landing-text h1{
+        font-size: 6rem;
+    }
+
+    .landing-text h6{
+        font-size: 4rem;
+    }
+    button{
+        background-color: rgb(191, 107, 233) !important;
+    }
+
+    .barra{
+        background-color: white !important;
+    }
+
+    .navbar-nav a{
+        background-color: rgb(191, 107, 233) !important;
+        color: white !important;
+    }
+
+    a.navbar-brand{
+        color: rgb(191, 107, 233) !important;
+        font-weight: 600;
+    }
+
+    .dropdown-menu{
+        padding: 0 !important;
+    }
+    
+    .dropdown-menu a{
+        background-color: rgb(92, 37, 119) !important;
+    }
+    .topnav{
+        background-color: rgb(191, 107, 233) !important;
+    }
+    .navbar-default{
+        background-color: rgba(0, 0, 0, 0) !important;
+        border: none !important;
+    }
+    
+
+}
+
+@media screen and (max-width: 600px){
+
+    body{
+        background: url(/images/background4.jpg) repeat center fixed;
+        background-size: cover;
+    }
+
+    .navbar-default{
+        background-color: rgba(0, 0, 0, 0) !important;
+        border: none !important;
+    }
+
+    .about .container{
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    .landing{
+        position:absolute;
+        left:50%;
+        top:25%;
+        transform: translate(-50%,-10%);
+    }
+
+    .landing-text h1{
+        font-size: 25px !important;
+    }
+
+    .landing-text h6{
+        font-size: 2rem;
+    }
+
+    .profile-img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .portfolio-item{
+        flex-direction: column;
+    }
+
+    .portfolio-description{
+        margin: 0;
+    }
+
+    .timeline p{
+        font-size: 1.6rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.4rem;
+        padding-left: 70px;
+        z-index: 50;
+    }
+
+    .timeline h2{
+        font-size: 2rem;
+    }
+    
+    .up{
+        right: 2rem;
+    }
+
+    .cta{
+        padding-bottom: 1.5rem;
+    }
+
+    button{
+        background-color: rgb(191, 107, 233) !important;
+    }
+
+    .barra{
+        background-color: white !important;
+    }
+
+    .navbar-nav a{
+        background-color: rgb(191, 107, 233) !important;
+        color: white !important;
+    }
+
+    a.navbar-brand{
+        color: rgb(191, 107, 233) !important;
+        font-weight: 600;
+    }
+
+    .dropdown-menu{
+        padding: 0 !important;
+    }
+    
+    .dropdown-menu a{
+        background-color: rgb(92, 37, 119) !important;
+    }
+    .topnav{
+        background-color: rgb(191, 107, 233) !important;
+    }
+
+    .landing-text{
+        margin-top: 50%;
+    }
+    
+    .contact-info h3{
+        font-size: 1.5rem;
+    }
+
+    .contact-info h4{
+        font-size: 1.5rem;
+    }
+}
+/*End media queries*/
 /*End media queries*/

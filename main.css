@@ -118,6 +118,12 @@ header{
     font-weight: 400;
     border: none;
 }
+
+nav{
+    top:0px;
+    position: static;
+}
+
 /*End header*/
 
 /*Start about*/
@@ -391,10 +397,6 @@ header{
     color: white;
 }
 /*End footer*/
-nav{
-    top:0px;
-    position: static;
-}
 
 /*Start animations*/
 @-webkit-keyframes pulse{
@@ -650,6 +652,14 @@ nav{
     .landing-text{
         margin-top: 50%;
     }
+    
+    .contact-info h3{
+        font-size: 1.5rem;
+    }
+
+    .contact-info h4{
+        font-size: 1.5rem;
+    }
 }
 /*End media queries*/
 
@@ -719,5 +729,3 @@ nav{
 
 
 /* End new header */
-
-/* hola esto es una prueba */
