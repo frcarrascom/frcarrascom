@@ -93,18 +93,15 @@ header{
     float: right;
 }
 
-.landing{
-    display: block; 
-}
 
 .landing-text{
-   /* position: absolute;*/
     margin-top: 10%;
     width: 100%;
-    height: 40rem;
+    height: 20rem;
     text-align: center;
     z-index: 1;
 }
+
 /* new topnav */
 
 .landing-text h1{
@@ -399,12 +396,6 @@ nav{
     position: static;
 }
 
-.landing{
-    position:absolute;
-    left:50%;
-    top:10%;
-    transform: translate(-50%,-10%);
-}
 /*Start animations*/
 @-webkit-keyframes pulse{
     0%{
@@ -420,6 +411,7 @@ nav{
 /*End animations*/
 
 /*Start media queries*/
+
 @media screen and (min-width: 768px) {
     .container-fluid{
         background-color: rgb(191, 107, 233);
@@ -436,8 +428,8 @@ nav{
     .landing{
         position:absolute;
         left:50%;
-        top:25%;
-        transform: translate(-50%,-10%);
+        top:15%;
+        transform: translate(-50%,-30%);
     }
 
     .nav-link{
