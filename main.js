@@ -1,29 +1,3 @@
-$(document).ready(function () {
-
-});
-
-
-/*    Nav scroll down    */
-/*
-var mywindow = $(window);
-var mypos = mywindow.scrollTop();
-var up = false;
-var newscroll;
-mywindow.scroll(function () {
-    newscroll = mywindow.scrollTop();
-    if (newscroll > mypos && !up) {
-        $('.top-nav').stop().fadeOut();
-        up = !up;
-        console.log(up);
-    } else if(newscroll < mypos && up) {
-        $('.top-nav').stop().fadeIn();
-        up = !up;
-    }
-    mypos = newscroll;
-});
-*/
-/*    Nav scroll down end   */
-
 
 function myFunction() {
     var x = document.getElementById("mylinks");
@@ -54,3 +28,15 @@ function myFunction() {
 
 
 
+const totop = document.querySelector("#totop");
+
+totop.addEventListener("click", function(){
+
+ /* window.scrollTo({
+    top: 0,
+    left: 0,
+    behaviour: "smooth"
+    
+  });     no funciona*/
+  $("html, body").animate({scrollTop: 0}, "slow");
+});

@@ -373,23 +373,22 @@ nav{
     position: relative;
 }
 
-.up{
-    position: absolute;
+#totop{
+    position: fixed;
     height: 5rem;
     width: 5rem;
     background-color: lightgray;
-    top: -2.5rem;
-    right: 5rem;
-    border-radius: 100%;
-    display: flex;
+    top: 65rem;
+    right: 3rem;
+    border-radius: 50%;
+    border: none;
     animation: pulse 2s infinite;
     cursor: pointer;
+    outline: none;
 }
 
-.up i{
-    color: #16162d;
-    font-size: 2rem;
-    margin: auto;
+#totop:active{
+    background-color: #F727B2;
 }
 
 .copyright p{
@@ -414,7 +413,7 @@ nav{
 
 /*Start media queries*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
     .container-fluid{
         background-color: rgb(191, 107, 233);
     }
@@ -473,9 +472,75 @@ nav{
         margin-top: 40%;
         margin-bottom: 20%;
     }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container-fluid{
+        background-color: rgb(191, 107, 233);
+    }
+    .navbar-default .navbar-nav .dropdown .drop-button {
+        text-align: left;
+      }
+
+    body{
+        background: url(/images/background4.jpg) repeat center fixed;
+        background-size: cover;
+    }
+
+    .landing{
+        position:absolute;
+        left:50%;
+        top:15%;
+        transform: translate(-50%,-30%);
+    }
+
+    .nav-link{
+        font-size: 2rem;
+    }
+
+    .about-heading h2{
+        font-size: 4rem;
+    }
+
+    .section-heading h2{
+        font-size: 3rem;
+    }
+
+    .about-details li{
+        margin: 0 2rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.5rem;
+    }
+
+    .landing-text h1{
+        font-size: 6rem;
+    }
+
+    .landing-text h6{
+        font-size: 4rem;
+    }
+    .dropdown-menu a{
+        margin:0px;
+        padding: 1rem !important;
+    }
+    .dropdown-menu{
+        padding: 0 !important;
+    }
+
+    .landing-text{
+        margin-top: 110%;
+        margin-bottom: 20%;
+    }
+
+    #totop{
+        top: 125rem;
+        right: 3rem;
+    }
   
 }
-@media screen and (max-width: 767px) and (min-width: 601px) {
+@media screen and (max-width: 768px) and (min-width: 601px) {
     .navbar-default .navbar-nav .dropdown .drop-button {
         text-align: left;
       }
@@ -508,15 +573,19 @@ nav{
         font-size: 1.5rem;
     }
 
+    .landing{
+        position:absolute;
+        left:50%;
+        top:25%;
+        transform: translate(-50%,-10%);
+    }
+
     .landing-text h1{
         font-size: 6rem;
     }
 
     .landing-text h6{
         font-size: 4rem;
-    }
-    button{
-        background-color: rgb(191, 107, 233) !important;
     }
 
     .barra{
@@ -538,16 +607,19 @@ nav{
     }
     
     .dropdown-menu a{
-        background-color: rgb(92, 37, 119) !important;
+        margin:0px;
+        padding: 1rem !important;
     }
-    .topnav{
-        background-color: rgb(191, 107, 233) !important;
-    }
+    
     .navbar-default{
         background-color: rgba(0, 0, 0, 0) !important;
         border: none !important;
     }
     
+    #totop{
+        top: 92rem;
+        right: 3rem;
+    }
 
 }
 
@@ -572,12 +644,12 @@ nav{
     .landing{
         position:absolute;
         left:50%;
-        top:25%;
+        top:35%;
         transform: translate(-50%,-10%);
     }
 
     .landing-text h1{
-        font-size: 25px !important;
+        font-size: 4rem !important;
     }
 
     .landing-text h6{
@@ -604,7 +676,7 @@ nav{
 
     .timeline .date::before{
         font-size: 1.4rem;
-        padding-left: 70px;
+        padding-left: 85px;
         z-index: 50;
     }
 
@@ -612,16 +684,8 @@ nav{
         font-size: 2rem;
     }
     
-    .up{
-        right: 2rem;
-    }
-
     .cta{
         padding-bottom: 1.5rem;
-    }
-
-    button{
-        background-color: rgb(191, 107, 233) !important;
     }
 
     .barra{
@@ -641,6 +705,10 @@ nav{
     .dropdown-menu{
         padding: 0 !important;
     }
+
+    .collapsed{
+        background-color: rgb(191, 107, 233) !important;
+    }
     
     .dropdown-menu a{
         background-color: rgb(92, 37, 119) !important;
@@ -649,10 +717,6 @@ nav{
         background-color: rgb(191, 107, 233) !important;
     }
 
-    .landing-text{
-        margin-top: 50%;
-    }
-    
     .contact-info h3{
         font-size: 1.5rem;
     }
