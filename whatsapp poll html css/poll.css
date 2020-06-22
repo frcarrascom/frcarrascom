@@ -89,10 +89,10 @@ h1{
     margin-bottom: 1rem;
 }
 
-.row{
+/*.row{
     display: flex;
     flex-direction: row;
-}
+}*/
 
 .row img{
     width: 100%;
