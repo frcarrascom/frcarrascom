@@ -92,6 +92,10 @@ h1{
 .row{
     flex-direction: row;
 }
+
+.row img{
+    width: auto;
+}
 /*End reusable*/
 
 /*Start header*/
