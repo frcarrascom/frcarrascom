@@ -62,7 +62,7 @@ h1{
 }
 
 .section-heading h2{
-    font-size: 5rem;
+    font-size: 8rem;
     text-transform: uppercase;
     font-weight: 500;
     position: relative;
@@ -520,7 +520,11 @@ nav{
     }
 
     .section-heading h2{
-        font-size: 3rem;
+        font-size: 5rem;
+    }
+
+    .section-heading h6{
+        font-size: 2rem;
     }
 
     .about-details li{
@@ -720,6 +724,10 @@ nav{
         font-size: 2rem;
     }
 
+    .section-heading h2{
+        font-size: 3rem;
+    }
+
     .profile-img{
         width: 100%;
         display: block;
@@ -741,6 +749,7 @@ nav{
 
     .portfolio-description p{
         font-size: 1.5rem;
+        padding-right: 50px;
     }
 
 
