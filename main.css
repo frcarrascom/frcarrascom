@@ -22,7 +22,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
 }
 
 section{
@@ -704,8 +704,8 @@ nav{
     body{
         background: url(/images/background4.png);
         background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-repeat: repeat;
+        background-attachment: ;
         background-size: contain;
     }
 
