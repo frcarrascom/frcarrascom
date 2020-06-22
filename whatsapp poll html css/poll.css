@@ -93,37 +93,6 @@ h1{
 
 /*Start header*/
 
-header{
-    width: 100%;
-    height: 100vh;
-}
-
-/* New Header */
-.topnav{
-    float: right;
-}
-
-
-.landing-text{
-    margin-top: 10%;
-    width: 100%;
-    height: 20rem;
-    text-align: center;
-    z-index: 1;
-}
-
-/* new topnav */
-
-.landing-text h1{
-    font-size: 9rem !important;
-    font-family: 'Open-Sans', sans-serif;
-    background: linear-gradient(to top, #F727B2, #3883ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border: none;
-}
-
-
 .dropdown-menu > li {
     position: relative;
     -webkit-user-select: none;
@@ -173,6 +142,11 @@ header{
     background-color: rgb(191, 107, 233) !important;
     color: white !important;
   }
+
+  .navbar-nav li a:hover{
+    color: #ECCBE6 !important;
+  }
+
   .navbar-default .navbar-nav .dropdown .drop-button:focus,
   .navbar-default .navbar-nav .dropdown .drop-button:hover {
     border: none;
@@ -185,6 +159,54 @@ header{
   .navbar-brand{
       color: white !important;
   }
+
+  .navbar-brand:hover{
+    color: #ECCBE6 !important;
+}
+
+
+/* End new header */
+
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+.topnav{
+    float: right;
+}
+
+
+.landing-text{
+    margin-top: 10%;
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+    z-index: 1;
+}
+
+/* new topnav */
+
+.landing-text h1{
+    font-size: 9rem !important;
+    font-family: 'Open-Sans', sans-serif;
+    background: linear-gradient(to top, #F727B2, #3883ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none;
+}
+
+.landing-text h6{
+    font-size: 8rem;
+    font-weight: 400;
+    border: none;
+}
+
+nav{
+    top:0px;
+    position: static;
+}
 
 
 /* End new header */
@@ -238,9 +260,7 @@ header{
 /*End animations*/
 
 /*Start media queries*/
-/*Start media queries*/
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
     .container-fluid{
         background-color: rgb(191, 107, 233);
     }
@@ -257,7 +277,7 @@ header{
         position:absolute;
         left:50%;
         top:15%;
-        transform: translate(-50%, -10%);
+        transform: translate(-50%,-30%);
     }
 
     .nav-link{
@@ -299,21 +319,23 @@ header{
         margin-top: 40%;
         margin-bottom: 20%;
     }
-  
 }
-@media screen and (max-width: 767px) and (min-width: 601px) {
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container-fluid{
+        background-color: rgb(191, 107, 233);
+    }
     .navbar-default .navbar-nav .dropdown .drop-button {
         text-align: left;
       }
-    body{
-        background: url(/images/background4.jpg) repeat center fixed;
-        background-size: cover;
+
+    .landing{
+        position:absolute;
+        left:50%;
+        top:15%;
+        transform: translate(-50%,-30%);
     }
-    
-    li{
-        margin: 1rem 0;
-    }
-    
+
     .nav-link{
         font-size: 2rem;
     }
@@ -341,8 +363,67 @@ header{
     .landing-text h6{
         font-size: 4rem;
     }
-    button{
-        background-color: rgb(191, 107, 233) !important;
+    .dropdown-menu a{
+        margin:0px;
+        padding: 1rem !important;
+    }
+    .dropdown-menu{
+        padding: 0 !important;
+    }
+
+    .landing-text{
+        margin-top: 110%;
+        margin-bottom: 20%;
+    }
+
+    #totop{
+        top: 122rem;
+        right: 3rem;
+    }
+  
+}
+@media screen and (max-width: 768px) and (min-width: 601px) {
+    .navbar-default .navbar-nav .dropdown .drop-button {
+        text-align: left;
+      }
+      
+    li{
+        margin: 1rem 0;
+    }
+    
+    .nav-link{
+        font-size: 2rem;
+    }
+
+    .about-heading h2{
+        font-size: 4rem;
+    }
+
+    .section-heading h2{
+        font-size: 3rem;
+    }
+
+    .about-details li{
+        margin: 0 2rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.5rem;
+    }
+
+    .landing{
+        position:absolute;
+        left:50%;
+        top:25%;
+        transform: translate(-50%,-10%);
+    }
+
+    .landing-text h1{
+        font-size: 6rem;
+    }
+
+    .landing-text h6{
+        font-size: 4rem;
     }
 
     .barra{
@@ -364,26 +445,24 @@ header{
     }
     
     .dropdown-menu a{
-        background-color: rgb(92, 37, 119) !important;
+        margin:0px;
+        padding: 1rem !important;
     }
-    .topnav{
-        background-color: rgb(191, 107, 233) !important;
-    }
+    
     .navbar-default{
         background-color: rgba(0, 0, 0, 0) !important;
         border: none !important;
     }
     
+    #totop{
+        top: 85rem;
+        right: 3rem;
+    }
 
 }
 
 @media screen and (max-width: 600px){
-
-    body{
-        background: url(/images/background4.jpg) repeat center fixed;
-        background-size: cover;
-    }
-
+    
     .navbar-default{
         background-color: rgba(0, 0, 0, 0) !important;
         border: none !important;
@@ -398,12 +477,12 @@ header{
     .landing{
         position:absolute;
         left:50%;
-        top:25%;
+        top:35%;
         transform: translate(-50%,-10%);
     }
 
     .landing-text h1{
-        font-size: 25px !important;
+        font-size: 4rem !important;
     }
 
     .landing-text h6{
@@ -430,7 +509,7 @@ header{
 
     .timeline .date::before{
         font-size: 1.4rem;
-        padding-left: 70px;
+        padding-left: 85px;
         z-index: 50;
     }
 
@@ -438,16 +517,8 @@ header{
         font-size: 2rem;
     }
     
-    .up{
-        right: 2rem;
-    }
-
     .cta{
         padding-bottom: 1.5rem;
-    }
-
-    button{
-        background-color: rgb(191, 107, 233) !important;
     }
 
     .barra{
@@ -467,6 +538,10 @@ header{
     .dropdown-menu{
         padding: 0 !important;
     }
+
+    .collapsed{
+        background-color: rgb(191, 107, 233) !important;
+    }
     
     .dropdown-menu a{
         background-color: rgb(92, 37, 119) !important;
@@ -475,10 +550,6 @@ header{
         background-color: rgb(191, 107, 233) !important;
     }
 
-    .landing-text{
-        margin-top: 50%;
-    }
-    
     .contact-info h3{
         font-size: 1.5rem;
     }
@@ -486,6 +557,10 @@ header{
     .contact-info h4{
         font-size: 1.5rem;
     }
+
+    #totop{
+        top: 62rem;
+        right: 3rem;
+    }
 }
-/*End media queries*/
 /*End media queries*/
