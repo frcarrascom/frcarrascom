@@ -89,6 +89,9 @@ h1{
     margin-bottom: 1rem;
 }
 
+.row{
+    flex-direction: row;
+}
 /*End reusable*/
 
 /*Start header*/
