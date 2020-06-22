@@ -251,6 +251,25 @@ nav{
     font-size: 1.3rem;
     color: white;
 }
+
+#totop{
+    position: fixed;
+    height: 5rem;
+    width: 5rem;
+    background-color: lightgray;
+    top: 65rem;
+    right: 3rem;
+    border-radius: 50%;
+    border: none;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+    outline: none;
+}
+
+#totop:active{
+    background-color: #F727B2;
+}
+
 /*End footer*/
 
 /*Start animations*/
@@ -279,7 +298,7 @@ nav{
     .landing{
         position:absolute;
         left:50%;
-        top:15%;
+        top:30%;
         transform: translate(-50%,-30%);
     }
 
