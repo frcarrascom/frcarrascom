@@ -271,17 +271,18 @@ nav{
     margin-bottom: 5rem;
     background-color: rgba(240, 240, 240, 0.9);
     border-radius: 2rem 0 0rem 2rem;
+    margin-bottom: 5rem;
+}
+
+.portfolio a:hover{
+    text-decoration: none;
 }
 
 .portfolio-item:hover{
     background-color: rgba(240, 240, 240);}
 
-.portfolio-item:last-child{
-    margin-bottom: 0;
-}
 
 .portfolio-img{
-
     flex: 1;
 }
 
@@ -727,11 +728,21 @@ nav{
 
     .portfolio-item{
         flex-direction: column;
+        border-radius: 2rem 2rem 0rem 0;
     }
 
     .portfolio-description{
         margin: 0;
     }
+
+    .portfolio-description h6{
+        font-size: 2rem;
+    }
+
+    .portfolio-description p{
+        font-size: 1.5rem;
+    }
+
 
     .timeline p{
         font-size: 1.6rem;
