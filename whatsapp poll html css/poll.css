@@ -90,11 +90,12 @@ h1{
 }
 
 .row{
+    display: flex;
     flex-direction: row;
 }
 
 .row img{
-    width: auto;
+    width: 100%;
 }
 /*End reusable*/
 
