@@ -40,3 +40,7 @@ totop.addEventListener("click", function(){
   });     no funciona*/
   $("html, body").animate({scrollTop: 0}, "slow");
 });
+
+$(function() {
+  AOS.init();
+});
