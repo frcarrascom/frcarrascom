@@ -44,3 +44,7 @@ totop.addEventListener("click", function(){
 $(function() {
   AOS.init();
 });
+
+$(window).on('load', function () {
+  AOS.refresh();
+});
