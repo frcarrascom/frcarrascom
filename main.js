@@ -42,7 +42,11 @@ totop.addEventListener("click", function(){
 });
 
 $(function() {
-  AOS.init();
+  AOS.init({ 
+    duration: 700,
+    delay: 400,
+    once: true,
+});
 });
 
 $(window).on('load', function () {
